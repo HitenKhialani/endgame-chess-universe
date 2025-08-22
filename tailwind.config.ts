@@ -26,11 +26,13 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					foreground: 'hsl(var(--secondary-foreground))',
+					glow: 'hsl(var(--secondary-glow))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -52,16 +54,25 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				chess: {
+					white: 'hsl(var(--chess-white))',
+					black: 'hsl(var(--chess-black))',
+					gold: 'hsl(var(--chess-gold))'
 				}
+			},
+			backgroundImage: {
+				'cosmic': 'var(--gradient-cosmic)',
+				'chess': 'var(--gradient-chess)',
+				'hero': 'var(--gradient-hero)',
+				'glow': 'var(--gradient-glow)'
+			},
+			boxShadow: {
+				'cosmic': 'var(--shadow-cosmic)',
+				'glow': 'var(--shadow-glow)',
+				'piece': 'var(--shadow-piece)'
+			},
+			transitionTimingFunction: {
+				'cosmic': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
